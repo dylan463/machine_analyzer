@@ -22,7 +22,7 @@ Load and Analyze Data
    
    # Detect machine states and remouve outlier
    detector = StateDetector(resampled)
-   detector.preprocess_states(window_size="5s",production_threshold=60)
+   detector.preprocess_states(window_size=50,production_threshold=60)
 
    # no-outliers data and states positions
    processed = detector.get_processed_data()
@@ -69,19 +69,3 @@ Optimized columnar format for large datasets.
 Required Columns:
 - `timestamp`: DateTime column with timestamps
 - `value`: Numeric column with energy consumption values
-
-Command Line Interface
----------------------
-
-For quick analysis from the command line:
-
-.. code-block:: bash
-
-   # Basic analysis
-   machine-analyzer analyze data.csv
-   
-   # With custom parameters
-   machine-analyzer analyze data.csv --min-duration 30s --max-duration 2h
-   
-   # Generate reports
-   machine-analyzer analyze data.csv --output-dir reports/
