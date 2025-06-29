@@ -73,7 +73,7 @@ jobs:
         pip list --outdated --format=columns > outdated-deps.txt
     
     - name: Upload dependency reports
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: dependency-reports
         path: |
