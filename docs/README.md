@@ -163,7 +163,7 @@ The library expects energy consumption data with the following structure:
 - **value**: Energy consumption value (numeric)
 
 ### Example CSV:
-```csv
+```text
 timestamp,value
 2023-01-01 00:00:00,0.0
 2023-01-01 00:00:01,2.5

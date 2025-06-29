@@ -4,7 +4,7 @@ Contributing to Machine Analyzer
 Thank you for your interest in contributing to Machine Analyzer! This document provides guidelines and information for contributors.
 
 Getting Started
---------------
+---------------
 
 1. **Fork the repository** on GitHub
 2. **Clone your fork** locally
@@ -28,7 +28,7 @@ Getting Started
       pre-commit install
 
 Development Setup
-----------------
+-----------------
 
 Code Style
 ~~~~~~~~~~
@@ -79,7 +79,7 @@ Run specific test categories:
    pytest -m integration # Run only integration tests
 
 Documentation
-------------
+-------------
 
 Build the documentation locally:
 
@@ -91,7 +91,7 @@ Build the documentation locally:
 The documentation will be available in `docs/_build/html/`.
 
 Writing Documentation
-~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
 
 - Use clear, concise language
 - Include code examples
@@ -115,7 +115,7 @@ Making Changes
 6. **Commit your changes** with a descriptive message
 
 Commit Messages
-~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
 
 Follow conventional commit format:
 
@@ -128,7 +128,7 @@ Follow conventional commit format:
    refactor: improve state detection algorithm
 
 Pull Request Process
--------------------
+--------------------
 
 1. **Push your branch** to your fork
 2. **Create a pull request** on GitHub
@@ -141,7 +141,7 @@ Pull Request Process
 5. **Merge** when approved
 
 Issue Reporting
---------------
+---------------
 
 When reporting issues, please include:
 
@@ -153,7 +153,7 @@ When reporting issues, please include:
 - **Code example**: Minimal code to reproduce the issue
 
 Feature Requests
----------------
+----------------
 
 When requesting features, please include:
 
@@ -163,7 +163,7 @@ When requesting features, please include:
 - **Impact**: How this would benefit users
 
 Code of Conduct
----------------
+----------------
 
 We are committed to providing a welcoming and inclusive environment for all contributors. Please:
 
@@ -174,7 +174,7 @@ We are committed to providing a welcoming and inclusive environment for all cont
 - Show empathy towards other community members
 
 Getting Help
------------
+------------
 
 If you need help with contributing:
 

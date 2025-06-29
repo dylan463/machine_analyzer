@@ -21,7 +21,8 @@ help:
 
 # Custom targets for convenience
 clean:
-	rm -rf $(BUILDDIR)/*
+	@echo Cleaning build directory...
+	@if exist "$(BUILDDIR)" rmdir /s /q "$(BUILDDIR)"
 
 html: clean
 	$(SPHINXBUILD) -b html $(SPHINXOPTS) $(SOURCEDIR) $(BUILDDIR)/html

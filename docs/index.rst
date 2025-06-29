@@ -26,6 +26,7 @@ A comprehensive machine energy consumption analysis library for production cycle
    examples/index
    contributing
    changelog
+   README
 
 Features
 --------
@@ -57,7 +58,7 @@ For documentation:
    pip install machine-analyzer[docs]
 
 Quick Example
-------------
+-------------
 
 .. code-block:: python
 
