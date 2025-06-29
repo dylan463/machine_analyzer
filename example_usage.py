@@ -93,7 +93,7 @@ def main():
     state_detector = StateDetector(processed_data, energy_column="value")
     
     # Detect states using energy consumption patterns
-    state_detector.preprocess_states(window_size="5s", production_threshold=60,iqr_coefficients=(3,3,1.5,3))
+    state_detector.preprocess_states(window_size=50, production_threshold=60,iqr_coefficients=(3,3,1.5,3))
     state_data = state_detector.get_state_masks()
     logger.info(f"Detected {len(state_data)} unique states")
     

@@ -12,7 +12,7 @@ def read_readme():
 
 # Read requirements
 def read_requirements():
-    with open("docs/requirements.txt", "r", encoding="utf-8") as fh:
+    with open("requirements.txt", "r", encoding="utf-8") as fh:
         return [line.strip() for line in fh if line.strip() and not line.startswith("#")]
 
 setup(
