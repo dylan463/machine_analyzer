@@ -1,0 +1,50 @@
+# Include README and license files
+include README.md
+include LICENSE
+include CHANGELOG.md
+include requirements.txt
+include pyproject.toml
+include setup.py
+
+# Include documentation
+recursive-include docs *
+recursive-include notebook *
+
+# Include test files
+recursive-include tests *.py
+recursive-include tests *.txt
+recursive-include tests *.json
+
+# Include data files
+recursive-include data *.txt
+recursive-include data *.csv
+recursive-include data *.json
+recursive-include data *.xlsx
+recursive-include data *.parquet
+
+# Include configuration files
+include pytest.ini
+include .gitignore
+include .pre-commit-config.yaml
+
+# Include package data
+recursive-include machine_analyzer *.txt
+recursive-include machine_analyzer *.json
+recursive-include machine_analyzer *.yaml
+recursive-include machine_analyzer *.yml
+
+# Exclude common unwanted files
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *.pyd
+global-exclude __pycache__
+global-exclude .git*
+global-exclude .DS_Store
+global-exclude .coverage
+global-exclude htmlcov
+global-exclude .pytest_cache
+global-exclude .mypy_cache
+global-exclude .tox
+global-exclude build
+global-exclude dist
+global-exclude *.egg-info 

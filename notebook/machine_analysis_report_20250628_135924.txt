@@ -1,0 +1,54 @@
+==================================================
+MACHINE ENERGY ANALYSIS REPORT
+==================================================
+Generated on: 2025-06-28 13:59:24
+
+EXECUTIVE SUMMARY
+--------------------
+Total Production Cycles: 79
+Anomalous Units: 12
+Average Quality Score: 0.95
+
+PRODUCTION ANALYSIS
+--------------------
+Average Cycle Duration: 172.2 seconds
+Average Energy per Cycle: 17274.5
+Total Energy Consumed: 1364686.6
+
+QUALITY ASSESSMENT
+--------------------
+Quality Grade Distribution:
+  Grade A: 67 cycles
+  Grade B: 11 cycles
+  Grade D: 1 cycles
+
+ANOMALOUS UNITS
+--------------------
+Found 12 anomalous units:
+  Cycle ID: 16
+  Cycle ID: 31
+  Cycle ID: 39
+  Cycle ID: 40
+  Cycle ID: 45
+  Cycle ID: 51
+  Cycle ID: 60
+  Cycle ID: 61
+  Cycle ID: 66
+  Cycle ID: 75
+  Cycle ID: 77
+  Cycle ID: 78
+
+ENERGY STATISTICS
+--------------------
+Total Energy: 3367971.8
+Average Energy: 37.4
+Peak Energy: 181.7
+Minimum Energy: 25.9
+
+RECOMMENDATIONS
+--------------------
+1. High anomalous unit rate detected. Investigate root causes.
+
+==================================================
+END OF REPORT
+==================================================
