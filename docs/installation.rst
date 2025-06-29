@@ -82,6 +82,6 @@ Clone the repository and install in development mode:
 
 .. code-block:: bash
 
-   git clone https://github.com/yourusername/machine-analyzer.git
+   git clone https://github.com/dylan463/machine-analyzer.git
    cd machine-analyzer
    pip install -e .

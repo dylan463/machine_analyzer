@@ -23,7 +23,7 @@ The Machine Energy Analyzer is a Python library designed to analyze machine ener
 pip install machine-analyzer
 
 # Or install from source
-git clone https://github.com/yourusername/machine-analyzer.git
+git clone https://github.com/dylan463/machine-analyzer.git
 cd machine-analyzer
 pip install -e .
 ```
@@ -99,7 +99,7 @@ Detects machine states based on energy consumption patterns.
 **Example:**
 ```python
 detector = StateDetector(energy_data, "value")
-state_masks = detector.detect_states(window_size="200ms", standby_threshold=5)
+state_masks = detector.detect_states(window_size="200ms", production_threshold=5)
 distribution = detector.get_state_distribution()
 ```
 
@@ -111,7 +111,6 @@ Identifies individual production cycles from state data.
 - `segment_cycles()`: Find production cycles
 - `get_cycles()`: Get all detected cycles
 - `get_cycle_statistics()`: Get cycle statistics
-- `get_abnormal_cycles()`: Get abnormal cycles only
 
 **Example:**
 ```python
@@ -126,7 +125,6 @@ Assesses the quality of production cycles and detects anomalies.
 
 **Key Methods:**
 - `analyze_quality()`: Analyze all cycles
-- `compute_production_count()`: Count production by time period
 - `get_anomalous_units()`: Get list of anomalous cycles
 - `get_quality_summary()`: Get quality statistics
 
@@ -151,7 +149,7 @@ Generates comprehensive analysis reports.
 ```python
 report_gen = ReportGenerator(output_dir="reports")
 report_path = report_gen.generate_simple_report(
-    energy_data, production_cycles, quality_metrics, production_counts, anomalous_units
+    energy_data, production_cycles, quality_metrics, anomalous_units
 )
 csv_path = report_gen.generate_csv_report(production_cycles, quality_metrics)
 ```
@@ -186,8 +184,7 @@ timestamp,value
 ```python
 detector.detect_states(
     window_size="200ms",      # Rolling window size
-    standby_threshold=5,      # Energy threshold for standby state
-    sensitivity_factor=1      # Sensitivity for state changes
+    production_threshold=50,   
 )
 ```
 
@@ -197,7 +194,6 @@ detector.detect_states(
 segmenter.segment_cycles(
     min_duration="5s",        # Minimum cycle duration
     max_duration="300s",      # Maximum cycle duration
-    detect_abnormal=True      # Enable abnormal cycle detection
 )
 ```
 

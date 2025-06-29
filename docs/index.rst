@@ -10,7 +10,7 @@ Machine Analyzer Documentation
    :alt: MIT License
 
 .. image:: https://img.shields.io/badge/Version-1.0.0-orange.svg
-   :target: https://github.com/yourusername/machine-analyzer
+   :target: https://github.com/dylan463/machine-analyzer
    :alt: Version 1.0.0
 
 A comprehensive machine energy consumption analysis library for production cycle detection and quality assessment.
