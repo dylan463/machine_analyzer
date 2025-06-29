@@ -35,7 +35,7 @@ jobs:
         safety check --json --output safety-report.json || true
     
     - name: Upload security reports
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: security-reports
         path: |
@@ -114,7 +114,7 @@ jobs:
         pytest tests/ -v --cov=machine_analyzer --cov-report=xml --cov-report=html
     
     - name: Upload coverage reports
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: coverage-${{ matrix.python-version }}-${{ matrix.os }}
         path: |
@@ -146,7 +146,7 @@ jobs:
         sphinx-build -b linkcheck . _build/linkcheck
     
     - name: Upload documentation
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: docs
         path: docs/_build/html/ 

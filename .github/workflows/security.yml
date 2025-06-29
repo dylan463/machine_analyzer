@@ -41,9 +41,9 @@ jobs:
         pip-audit --format text --output pip-audit-report.txt || true
     
     - name: Upload security reports
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
-        name: security-reports
+        name: security-reports-${{ github.run_number }}
         path: |
           bandit-report.json
           bandit-report.txt
